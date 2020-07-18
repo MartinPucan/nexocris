@@ -1,0 +1,37 @@
+{% extends 'base.html.twig' %}
+
+{% block stylesheets %}
+    <link rel="stylesheet" href="{{ asset('public/css/app.css') }}">
+{% endblock %}
+{% block title %}Nexocris{% endblock %}
+
+
+{% block body %}
+
+<div>Filling the text on hover</div>
+
+<p data-item='Nexocris'>Nexocris</p>
+
+<section>
+    <div>Just being silly</div>
+    <nav class="navbar">
+        <ul class="navbar__menuItems">
+            <li><a href='#' data-item='Home'>Home</a></li>
+            <li><a href='#' data-item='About'>About</a></li>
+            <li><a href='#' data-item='Projects'>Projects</a></li>
+            <li><a href='#' data-item='Blog'>Blog</a></li>
+            <li><a href='#' data-item='PHP && JS'>PHP && JS</a></li>
+        </ul>
+    </nav>
+
+</section>
+
+<footer>
+
+    <div class="footer-copyright text-center">&copy; Developed with 🧠️</i> by
+        <a href="https://grohit.com/" class="white-text">Nexocris</a>. <a href="https://github.com/MartinPucan">Check my github</a>
+    </div>
+
+</footer>
+
+{% endblock %}
