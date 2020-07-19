@@ -8,32 +8,45 @@
 
 {% block body %}
 
-<div>Work your ass off.</div>
+<div class="container">
 
-<p data-item='Nexocris'>Nexocris</p>
+    <div class="quote">Work your ass off.</div>
 
-<section>
-    <div>
-        <em>"Being crazy isn't enough."</em>
-    </div>
-    <nav class="navbar">
-        <ul class="navbar__menuItems">
-            <li><a href='#' data-item='Home'>Home</a></li>
-            <li><a href='#' data-item='About'>About</a></li>
-            <li><a href='#' data-item='Projects'>Projects</a></li>
-            <li><a href='#' data-item='Blog'>Blog</a></li>
-            <li><a href='#' data-item='PHP && JS'>PHP && JS</a></li>
-        </ul>
-    </nav>
+    <p class="topic" data-item='Nexocris'>Nexocris</p>
 
-</section>
+    <section>
+        <div class="quote">
+            <em>"Being crazy isn't enough."</em>
+        </div>
+        <nav class="navbar">
+            <ul class="navbar__items">
+                <li class="navbar__item">
+                    <a href='#' class="navbar__item-anchor" data-item='Home'>Home</a>
+                </li>
+                <li class="navbar__item">
+                    <a href='#' class="navbar__item-anchor" data-item='About'>About</a>
+                </li>
+                <li class="navbar__item">
+                    <a href='#' class="navbar__item-anchor" data-item='Projects'>Projects</a>
+                </li>
+                <li class="navbar__item">
+                    <a href='#' class="navbar__item-anchor" data-item='Blog'>Blog</a>
+                </li>
+                <li class="navbar__item">
+                    <a href='#' class="navbar__item-anchor" data-item='PHP && JS'>PHP && JS</a>
+                </li>
+            </ul>
+        </nav>
 
-<footer>
+    </section>
 
-    <div class="footer-copyright text-center">&copy; Developed with 🧠️</i> by
-        <a href="https://grohit.com/" class="white-text">Nexocris</a>. <a href="https://github.com/MartinPucan">Check my github</a>
-    </div>
+    <footer>
 
-</footer>
+        <div class="footer-copyright text-center quote">&copy; Developed with 🧠️</i> by
+            <a href="https://grohit.com/" class="white-text">Nexocris</a>. <a href="https://github.com/MartinPucan">Check my github</a>
+        </div>
+
+    </footer>
+</div>
 
 {% endblock %}

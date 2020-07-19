@@ -4,56 +4,59 @@
 }
 
 body {
+  min-height: 100vh;
+  font-family: Hack, monospace;
+}
+
+.container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  font-family: Hack, monospace;
 }
 
-div {
+.quote {
   color: #727272;
   text-align: center;
 }
 
-p {
+.topic {
   margin: 16px;
-  font-size: 7rem;
+  font-size: 6.5rem;
   color: #a1a1a1;
   text-transform: uppercase;
+  transition: 0.5s ease-out;
   font-weight: 600;
-  transition: 0.4s;
-  position: relative;
 }
-p::before {
+.topic::before {
   content: attr(data-item);
   transition: 0.5s ease;
   position: absolute;
   overflow: hidden;
 }
-p:hover {
+.topic:hover {
   transform: scale(1.05);
 }
-p:hover::before {
+.topic:hover::before {
   width: 100%;
 }
 
 .navbar {
-  margin: 25px;
+  margin: 1.1em;
   background: #eeeeee;
-  padding: 16px;
+  padding: 1em;
   border-radius: 7px;
 }
-.navbar__menuItems {
+.navbar__items {
   list-style: none;
   display: flex;
   border-radius: 6px;
 }
-.navbar__menuItems li {
-  margin: 50px;
+.navbar__item {
+  margin: 3em;
 }
-.navbar__menuItems li a {
+.navbar__item-anchor {
   text-decoration: none;
   color: #8f8f8f;
   font-size: 24px;
@@ -62,19 +65,13 @@ p:hover::before {
   position: relative;
   text-transform: uppercase;
 }
-.navbar__menuItems li a::before {
+.navbar__item-anchor::before {
   content: attr(data-item);
   transition: 0.5s;
   color: #551eea;
   position: absolute;
   overflow: hidden;
-}
-.navbar__menuItems li a:hover {
-  transform: scale(1.92);
-}
-.navbar__menuItems li a:hover::before {
   width: 100%;
-  transition: all 0.5s ease-in-out;
 }
 
 footer {
