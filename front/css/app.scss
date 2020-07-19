@@ -19,27 +19,23 @@ div {
 
 p {
   margin: 16px;
-  font-size: 96px;
-  color: #ccc;
+  font-size: 7rem;
+  color: #a1a1a1;
   text-transform: uppercase;
   font-weight: 600;
-  transition: all 1s ease-in-out;
+  transition: .4s;
   position: relative;
 
   &::before {
     content: attr(data-item);
-    transition: all 1s ease-in-out;
-    color: #8254ff;
+    transition: .5s ease;
     position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    width: 0;
     overflow: hidden;
   }
 
   &:hover {
+    transform: scale(1.05);
+
     &::before {
       width: 100%;
     }
@@ -48,7 +44,7 @@ p {
 
 .navbar {
   margin: 25px;
-  background: #f9f9f9;
+  background: #eeeeee;
   padding: 16px;
   border-radius: 7px;
 
@@ -72,17 +68,14 @@ p {
         &::before {
           content: attr(data-item);
           transition: 0.5s;
-          color: #8254ff;
+          color: #551eea;
           position: absolute;
-          top: 0;
-          bottom: 0;
-          left: 0;
-          right: 0;
-          width: 0;
           overflow: hidden;
         }
 
         &:hover {
+          transform: scale(1.92);
+
           &::before {
             width: 100%;
             transition: all 0.5s ease-in-out;
