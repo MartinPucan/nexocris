@@ -12,14 +12,45 @@
 <div class="container-app">
     <h1 class="game__topic tc">Atom</h1>
 
-    <script src="{{ asset('front/js/app.js') }}"></script>
+{#    <script src="{{ asset('front/js/app.js') }}"></script>#}
     <script>
         const person1 = { name: "Martin" }
-        const person2 = person1
+        const person3 = person1
+        const person2 = person3
 
-        person1.age = 21
+        person3.job = 'Fireman'
+        person2.name = 'John'
+        person1.age = 22
+        person1.job = 'Programmer'
 
-        console.log(person2)
+        console.log(person3)
+
+    </script>
+    <script>
+        function add(array, value) {
+            array.push(value);
+            value += 1;
+        }
+
+        const array = [1, 2, 3];
+        const value = 4;
+        add(array);
+
+        // alert(array)
+        // alert(value)
+    </script>
+    <script>
+        function outer(a) {
+            function inner(b) {
+                return a + b;
+            }
+
+            return inner;
+        }
+
+        const f = outer(3);
+        console.log(f(5));
+
     </script>
 </div>
 {% endblock %}
