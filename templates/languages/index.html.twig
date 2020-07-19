@@ -1,0 +1,80 @@
+{% extends 'base.html.twig' %}
+
+{% block stylesheets %}
+    <link rel="stylesheet" href="{{ asset('public/css/app.css') }}">
+    <link rel="stylesheet" href="{{ asset('public/css/languages.css') }}">
+{% endblock %}
+
+{% block title %}{{ php }} - {{ js }}{% endblock %}
+
+
+{% block body %}
+
+<div class="container-lang">
+    <div class="side side__left">
+        <h1 class="topic tc">{{ php }}</h1>
+
+        <div class="code__explanation">
+            <details>
+                <summary>
+                    <span class="summary-title">Echo</span>
+                    <div class="summary-arrow-up">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-down"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                    </div>
+                </summary>
+                <div class="summary-content">
+                    Outputs all parameters. No additional newline is appended.<br>
+
+                    echo is not actually a function (it is a language construct), so you are not required to use parentheses with it. echo (unlike some other language constructs) does not behave like a function, so it cannot always be used in the context of a function. Additionally, if you want to pass more than one parameter to echo, the parameters must not be enclosed within parentheses.
+                </div>
+                <div class="summary-arrow-down">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-up"><polyline points="18 15 12 9 6 15"></polyline></svg>
+                </div>
+            </details>
+            <div class="code code__php">
+                <pre>
+                    <code>
+                        echo "Hello World!";
+                    </code>
+                </pre>
+            </div>
+        </div>
+    </div>
+
+    <div class="side side__right">
+        <h1 class="topic tc">{{ js }}</h1>
+
+        <div class="code__explanation">
+            <details>
+                <summary>
+                    <span class="summary-title">Objects!</span>
+                    <div class="summary-arrow-up">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-down"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                    </div>
+                </summary>
+                <div class="summary-content">
+                    Objects are passed by reference. When we set a variable equal to an object, the variable’s value is actually a reference to an address in memory where that object is stored 🔥<br>
+                    When we set another variable equal to this variable containing a reference, we’re creating a new reference pointing to the same address. Any modification to the object that’s stored on that location will be visible on both variables: their values are references pointing to the same object!<br>
+                    When we set a person2 equal to person1, the value of person2 will be a reference to the same spot in memory as person1 has a reference to.<br>
+                    Since prson1 and person2 have a reference to the same spot in memory, any modification on the object they are pointing to will be visible on both person1 and person2.<br>
+                </div>
+                <div class="summary-arrow-down">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-up"><polyline points="18 15 12 9 6 15"></polyline></svg>
+                </div>
+            </details>
+
+            <div class="code code__js">
+                <pre>
+                    <code>
+                        const person1 = { name: "Martin" }
+                        const person2 = person1
+                        person1.age = 21
+                        console.log(person2)
+                    </code>
+                </pre>
+            </div>
+        </div>
+
+    </div>
+</div>
+{% endblock %}

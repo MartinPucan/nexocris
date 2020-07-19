@@ -1,0 +1,25 @@
+{% extends 'base.html.twig' %}
+
+{% block stylesheet %}
+    <link rel="stylesheet" href="{{ asset('public/css/app.css') }}">
+    <link rel="stylesheet" href="{{ asset('public/css/game.css') }}">
+{% endblock %}
+
+{% block title %}Hello GameController!{% endblock %}
+
+{% block body %}
+
+<div class="container-app">
+    <h1 class="game__topic tc">Atom</h1>
+
+    <script src="{{ asset('front/js/app.js') }}"></script>
+    <script>
+        const person1 = { name: "Martin" }
+        const person2 = person1
+
+        person1.age = 21
+
+        console.log(person2)
+    </script>
+</div>
+{% endblock %}

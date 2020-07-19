@@ -12,7 +12,7 @@
 
     <div class="quote">Work your ass off.</div>
 
-    <p class="topic" data-item='Nexocris'>Nexocris</p>
+    <p class="name" data-item='Nexocris'>Nexocris</p>
 
     <section>
         <div class="quote">
@@ -21,7 +21,7 @@
         <nav class="navbar">
             <ul class="navbar__items">
                 <li class="navbar__item">
-                    <a href='#' class="navbar__item-anchor" data-item='Home'>Home</a>
+                    <a href='{{ path('game') }}' class="navbar__item-anchor" data-item='Game'>Game</a>
                 </li>
                 <li class="navbar__item">
                     <a href='#' class="navbar__item-anchor" data-item='About'>About</a>
@@ -33,7 +33,7 @@
                     <a href='#' class="navbar__item-anchor" data-item='Blog'>Blog</a>
                 </li>
                 <li class="navbar__item">
-                    <a href='#' class="navbar__item-anchor" data-item='PHP && JS'>PHP && JS</a>
+                    <a href='{{ path('languages') }}' class="navbar__item-anchor" data-item='PHP && JS'>PHP && JS</a>
                 </li>
             </ul>
         </nav>
@@ -42,7 +42,7 @@
 
     <footer>
 
-        <div class="footer-copyright text-center quote">&copy; Developed with 🧠️</i> by
+        <div class="footer-copyright text-center quote">&copy; Developed with <i>🧠️</i> by
             <a href="https://grohit.com/" class="white-text">Nexocris</a>. <a href="https://github.com/MartinPucan">Check my github</a>
         </div>
 
