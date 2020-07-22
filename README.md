@@ -5,6 +5,6 @@ for building css we use Sass
 
 ![MartinPucan github stats](https:://github-readme-stats.vercel.app/api?username=Github_MartinPucan)
 
-![MartinPucan github stats](https:://github-readme-stats.vercel.app/api?username=Github_MartinPucan&show_icons=true)
+![MartinPucan github stats](https:://github-readme-stats.vercel.app/api?username=MartinPucan&show_icons=true)
 
 ![MartinPucan github stats](https:://github-readme-stats.vercel.app/api?username=Github_MartinPucan&show_icons=true&theme=tokyonight)
