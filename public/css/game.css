@@ -4,4 +4,44 @@
   text-transform: uppercase;
 }
 
+.btn {
+  padding: 20px;
+  border-radius: 0.5rem;
+  background: #7C12BA;
+}
+
+.icon {
+  display: block;
+  width: 24px;
+  height: 24px;
+}
+
+.rectangle {
+  position: absolute;
+  top: 8px;
+  width: 3px;
+  height: 10px;
+  border-radius: 10px;
+  background: #ffffff;
+  transition: 0.35s;
+}
+
+.rectangle1 {
+  left: 8px;
+  transform: rotate(-45deg) scaleY(1) translate(0);
+}
+
+.rectangle1.open {
+  transform: rotate(-45deg) scaleY(1.75) translate(2px 1px);
+}
+
+.rectangle2 {
+  right: 8px;
+  transform: rotate(45deg) scaleY(1) translate(0);
+}
+
+.rectangle2.open {
+  transform: rotate(45deg) scaleY(1.75) translate(2px 1px);
+}
+
 /*# sourceMappingURL=game.css.map */
