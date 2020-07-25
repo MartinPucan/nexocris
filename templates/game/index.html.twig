@@ -1,9 +1,5 @@
 {% extends 'base.html.twig' %}
 
-{% block stylesheet %}
-    <link rel="stylesheet" href="{{ asset('public/css/game.css') }}">
-{% endblock %}
-
 {% block title %}Hello GameController!{% endblock %}
 
 {% block body %}
@@ -11,21 +7,12 @@
 <div class="container-app">
     <h1 class="game__topic tc">Atoms</h1>
 
-        <button class="btn">
+        <button>
             <div class="icon">
                 <span class="rectangle rectangle1" />
                 <span class="rectangle rectangle2" />
             </div>
         </button>
-
-    <div>
-        <button class="btn">
-            <div class="icon">
-                <span class="rectangle rectangle1" />
-                <span class="rectangle rectangle2" />
-            </div>
-        </button>
-    </div>
 
 {#    <script src="{{ asset('front/js/app.js') }}"></script>#}
     <script>
