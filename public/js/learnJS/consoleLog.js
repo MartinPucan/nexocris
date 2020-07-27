@@ -20,3 +20,13 @@ console.log({ foo, bar, baz });
 /** OR - this is so useful **/
 
 console.table([foo, bar, baz]);
+
+
+// console.time
+
+console.time('looper')
+
+let i = 0;
+while (i < 1000000) { i++ }
+
+console.timeEnd('looper')
