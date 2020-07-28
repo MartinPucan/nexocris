@@ -9,7 +9,7 @@ const baz = { name: "Sheldon", age: 28, nervous: false };
 console.log(foo);
 console.log(bar);
 console.log(baz);
-
+ 
 
 
 /** GOOD CODE - debugging **/
