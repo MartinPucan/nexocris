@@ -1,0 +1,27 @@
+{% extends 'base.html.twig' %}
+
+{% block stylesheets %}
+    <link rel="stylesheet" href="{{ assetPath('css/hp.css') }}">
+{% endblock %}
+
+{% block title %}Hello GameController!{% endblock %}
+
+{% block body %}
+
+<div class="container-hp">
+    <h1 class="game__topic tc">Atoms</h1>
+
+    <h1>&#x2728;Harry Potter Characters &#x2728;</h1>
+    <div id="searchWrapper">
+        <input
+            type="text"
+            name="searchBar"
+            id="searchBar"
+            placeholder="search for a character"
+        />
+    </div>
+    <ul id="charactersList"></ul>
+
+    <script src="{{ assetPath('js/app.js') }}"></script>
+</div>
+{% endblock %}

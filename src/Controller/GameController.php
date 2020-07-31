@@ -16,4 +16,12 @@ class GameController extends AbstractController
             'controller_name' => 'GameController',
         ]);
     }
+
+    /**
+     * @Route("/hp-characters", name="harryPotter")
+     */
+    public function harryPotterPage()
+    {
+        return $this->render('game/hp.html.twig', []);
+    }
 }
