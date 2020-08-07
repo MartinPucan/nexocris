@@ -8,13 +8,13 @@ use App\Repository\ArticleRepository;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
-use Symfony\Component\Routing\Annotation\Route;
-
 
 class ArticleController extends AbstractController
 {
     /**
      * @Route("/article", name="article", methods={"GET"})
+     * @param ArticleRepository $articleRepository
+     * @return Response
      */
     public function index(ArticleRepository $articleRepository): Response
     {
@@ -25,16 +25,20 @@ class ArticleController extends AbstractController
 
     /**
      * @Route("/blog", name="blog")
+     * @param ArticleRepository $articleRepository
+     * @return Response
      */
-    public function blog(Article $article): Response
+    public function blog(ArticleRepository $articleRepository): Response
     {
         return $this->render('article/blog.html.twig', [
-            'article' => $article,
+            'articles' => $articleRepository,
         ]);
     }
 
     /**
      * @Route("/article/new", name="article_new", methods={"GET","POST"})
+     * @param Request $request
+     * @return Response
      */
     public function new(Request $request): Response
     {
@@ -58,6 +62,8 @@ class ArticleController extends AbstractController
 
     /**
      * @Route("/article/{id}", name="article_show", methods={"GET"})
+     * @param Article $article
+     * @return Response
      */
     public function show(Article $article): Response
     {
@@ -68,6 +74,9 @@ class ArticleController extends AbstractController
 
     /**
      * @Route("/article/{id}/edit", name="article_edit", methods={"GET","POST"})
+     * @param Request $request
+     * @param Article $article
+     * @return Response
      */
     public function edit(Request $request, Article $article): Response
     {
@@ -88,6 +97,9 @@ class ArticleController extends AbstractController
 
     /**
      * @Route("/article/{id}", name="article_delete", methods={"DELETE"})
+     * @param Request $request
+     * @param Article $article
+     * @return Response
      */
     public function delete(Request $request, Article $article): Response
     {
