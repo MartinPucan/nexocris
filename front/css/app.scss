@@ -1,10 +1,12 @@
 @import "spacing";
 @import "text";
 @import "game";
+@import "blog";
+@import "utilites";
 
 body {
-  min-height: 100vh;
   font-family: Hack, monospace;
+  margin: 0 auto;
 }
 
 .container-center {
