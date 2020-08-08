@@ -38,6 +38,14 @@
   margin: 1.25rem;
 }
 
+.tc {
+  text-align: center;
+}
+
+.tw {
+  color: #fff;
+}
+
 .game__topic {
   font-size: 3em;
   color: #3d3d3d;
@@ -46,6 +54,7 @@
 
 button {
   padding: 10px;
+  border: 0;
   border-radius: 0.5rem;
   background: #7C12BA;
 }
@@ -139,9 +148,8 @@ button {
   bottom: 30px;
   letter-spacing: 1px;
 }
-
-.tc {
-  text-align: center;
+.articles__btn-right {
+  float: right;
 }
 
 body {
