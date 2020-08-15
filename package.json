@@ -15,7 +15,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "parcel watch front/css/*.scss --no-hmr --public-url /css/ --out-dir public/css",
-    "build": "parcel build front/css/*.scss --no-hmr --public-url /css/ --out-dir public/css"
+    "build": "parcel build front/css/*.scss --public-url /css/ --out-dir public/css"
   },
   "repository": {
     "type": "git",

@@ -1,1 +1,1 @@
-{"version":3,"sources":["text.scss"],"names":[],"mappings":"AAAA;EACE;;;AAGF;EACE","file":"text.css","sourceRoot":"../../front/css","sourcesContent":[".tc {\r\n  text-align: center;\r\n}\r\n\r\n.tw {\r\n  color: #fff;\r\n}"]}
+{"version":3,"sources":["text.scss"],"names":[],"mappings":"AAAA,IACE,kBAGF,IACE","file":"text.css","sourceRoot":"../../front/css","sourcesContent":[".tc {\r\n  text-align: center;\r\n}\r\n\r\n.tw {\r\n  color: #fff;\r\n}"]}
