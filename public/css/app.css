@@ -38,6 +38,14 @@
   margin: 1.25rem;
 }
 
+.tc {
+  text-align: center;
+}
+
+.tw {
+  color: #fff;
+}
+
 .game__topic {
   font-size: 3em;
   color: #3d3d3d;
@@ -46,6 +54,7 @@
 
 button {
   padding: 10px;
+  border: 0;
   border-radius: 0.5rem;
   background: #7C12BA;
 }
@@ -115,14 +124,16 @@ button {
   margin: 0.5em;
 }
 .articles__left {
-  width: 30%;
+  flex-basis: 30%;
   background: #5e5e5e;
   padding: 0.5em;
   border-top-left-radius: 8px;
   border-bottom-left-radius: 8px;
 }
 .articles__right {
-  width: 70%;
+  display: flex;
+  flex-direction: column;
+  flex-basis: 70%;
   padding: 0.5em;
 }
 .articles__btn {
@@ -130,18 +141,14 @@ button {
   border: 0;
   box-shadow: 0 6px 6px rgba(0, 0, 0, 0.2);
   color: #fff;
-  text-decoration: none;
   font-size: 16px;
   cursor: pointer;
-  padding: 0.6em;
   margin: 0.5em;
-  right: 0.3em;
   bottom: 30px;
   letter-spacing: 1px;
 }
-
-.tc {
-  text-align: center;
+.articles__btn-right {
+  flex-direction: row-reverse;
 }
 
 body {
@@ -154,7 +161,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
+  min-height: 95vh;
 }
 
 .quote {
@@ -226,12 +233,12 @@ body {
 }
 
 footer {
-  position: fixed;
+  position: absolute;
   z-index: 100;
-  bottom: 0;
   width: 100%;
-  min-height: 60px;
-  line-height: 60px;
+  bottom: 0;
+  min-height: 8vh;
+  line-height: 8vh;
   font-size: 1em;
   background-color: #f1f1f1;
   text-align: center;

@@ -6,6 +6,7 @@
 
 button {
   padding: 10px;
+  border: 0;
   border-radius: 0.5rem;
   background: #7C12BA;
 }
