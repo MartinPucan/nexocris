@@ -8,6 +8,8 @@
 /var/
 /vendor/
 /tests/
+/node_modules
+.cache/
 ###< symfony/framework-bundle ###
 
 ###> symfony/phpunit-bridge ###

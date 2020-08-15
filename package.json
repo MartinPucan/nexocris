@@ -9,9 +9,13 @@
   "dependencies": {
     "parcel-bundler": "^1.12.4"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "sass": "^1.26.10"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "parcel watch front/css/*.scss --no-hmr --public-url /css/ --out-dir public/css",
+    "build": ""
   },
   "repository": {
     "type": "git",
