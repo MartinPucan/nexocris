@@ -5,7 +5,31 @@
 {% block body %}
     <div class="blog__container">
         <div class="blog__navbar blog__navbar-line">
-            <h1 class="tc">Blog</h1>
+            <div class="text">
+                <span class="i_am">Read my </span>
+                <div class="carousel">
+                    <div class="carousel-word">
+                <span class="carousel__word">
+                    online journal
+                </span>
+                        <span class="carousel__word">
+                    site
+                </span>
+                        <span class="carousel__word">
+                    diary
+                </span>
+                        <span class="carousel__word">
+                    record
+                </span>
+                        <span class="carousel__word">
+                    journal
+                </span>
+                        <span class="carousel__word">
+                    blog
+                </span>
+                    </div>
+                </div>
+            </div>
         </div>
 
         <div class="articles__container">
@@ -16,8 +40,8 @@
                     </div>
                     <div class="articles__right">
                         <div class="tc">{{ article.title }}</div>
-                        <div>{{ article.text }}</div>
-                        <div>
+                        <div class="tc">{{ article.text }}</div>
+                        <div class="articles__btn-right">
                             <button class="articles__btn">
                                 <a href="{{ path('article_show', {'id': article.id}) }}" class="tw">Read more</a>
                             </button>
