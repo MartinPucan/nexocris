@@ -1,6 +1,10 @@
 ## CSS
-for building css we use Sass 
+for building css we use Parcell 
 
-`sass --watch front/css:public/css`
+`npm run dev`
+
+for build production use this command
+
+`npm run build`
 
 ![MartinPucan github stats](https://github-readme-stats.vercel.app/api?username=MartinPucan&show_icons=true&theme=tokyonight)
