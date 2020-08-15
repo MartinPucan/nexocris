@@ -1,0 +1,26 @@
+{
+  "name": "nexocris",
+  "version": "1.0.0",
+  "description": "for building css we use Sass",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "dependencies": {
+    "parcel-bundler": "^1.12.4"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MartinPucan/nexocris.git"
+  },
+  "author": "MartinPucan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MartinPucan/nexocris/issues"
+  },
+  "homepage": "https://github.com/MartinPucan/nexocris#readme"
+}
