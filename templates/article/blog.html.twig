@@ -1,0 +1,30 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Blog{% endblock %}
+
+{% block body %}
+    <div class="blog__container">
+        <div class="blog__navbar blog__navbar-line">
+            <h1 class="tc">Blog</h1>
+        </div>
+
+        <div class="articles__container">
+            {% for article in articles %}
+                <div class="articles__wrapper">
+                    <div class="articles__left">
+
+                    </div>
+                    <div class="articles__right">
+                        <div class="tc">{{ article.title }}</div>
+                        <div>{{ article.text }}</div>
+                        <div>
+                            <button class="articles__btn">
+                                <a href="{{ path('article_show', {'id': article.id}) }}" class="tw">Read more</a>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+{% endblock %}
