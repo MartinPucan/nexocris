@@ -5,5 +5,3 @@ RewriteBase /
 RewriteCond %{SCRIPT_FILENAME} !-d
 RewriteCond %{SCRIPT_FILENAME} !-f
 RewriteRule ^(.*)$ /index.php [L]
-
-RewriteRule !^(public/|index\.php|manifest\.json|sw\.js) [NC,F]
