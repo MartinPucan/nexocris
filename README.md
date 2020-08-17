@@ -1,9 +1,11 @@
 ## CSS
-for building css we use Parcell 
+for building css we use Parcel https://parceljs.org/
+
+To run in development mode
 
 `npm run dev`
 
-for build production use this command
+For build production use this command
 
 `npm run build`
 
