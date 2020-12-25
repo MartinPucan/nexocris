@@ -32,7 +32,7 @@
         "symfony/property-access": "5.1.*",
         "symfony/property-info": "5.1.*",
         "symfony/security-bundle": "*",
-        "symfony/serializer": "5.1.*",
+        "symfony/serializer": "5.2.*",
         "symfony/serializer-pack": "*",
         "symfony/string": "*",
         "symfony/translation": "5.1.*",
